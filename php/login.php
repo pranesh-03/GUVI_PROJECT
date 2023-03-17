@@ -1,15 +1,9 @@
   <?php
- 
-
 $host = "localhost";
 $username = "root";
 $password = "";
 $dbname="register";
 $conn = mysqli_connect($host, $username, $password, $dbname);
-
-
-
-
 
  if(isset($_POST['action']) && $_POST['action']=='login'){
   $lemail=$_POST['useremail'];

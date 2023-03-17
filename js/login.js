@@ -18,7 +18,7 @@ $(document).ready(function(){
             email: "In Format xyz@gmail.com",
           },
           password:{
-              required:"please Provide a password",
+              required:"Provide a password",
               minlength:" only 6 char password",
           }
         }
