@@ -40,13 +40,14 @@ $(document).ready(function(){
             //     password:password,
             //     action:action,
             // };
+            
             $.ajax({
                 type:'POST',
                 data:urltopass,
-
                 url:'http://localhost/GUVI/php/login.php',
+                
                 success: function(responseText){
-                    console.log(responseText);
+                    console.log(urltopass)
                     if(responseText==0){
                         // result.html('<span class="error">incorrect username and password</span>');
                         alert("incorrect email or password if not kindly register");

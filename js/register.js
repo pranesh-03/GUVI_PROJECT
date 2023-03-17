@@ -61,15 +61,16 @@ $(document).ready(function() {
         email: email,
         password: password,
       };
+      
       $.ajax({
         url: "http://localhost/GUVI/php/register.php",
         type: "POST",
         data: formData,
         success: function (response) {
-          // if(response==1){
-          //   alert("registered successfully");
-          //   window.location="http://localhost/GUVI/login.html"
-          // }
+          if(response==1){
+            alert("registered successfully");
+            window.location="http://localhost/GUVI/login.html"
+          }
           
         },
       });
