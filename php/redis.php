@@ -8,3 +8,5 @@ if($redis){
     echo $redis->get('mykey');
 
 }?>
+
+<!-- not working -->
