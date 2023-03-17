@@ -1,4 +1,9 @@
 <?php
+echo "login successfull <br>";
+
+echo "your Data from mysql <br><br>";
+
+
     $host ="localhost";
     $username="root";
     $password="";

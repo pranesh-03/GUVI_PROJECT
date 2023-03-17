@@ -28,38 +28,44 @@ $(document).ready(function() {
       },
       messages : {
         username: {
-          required: "Enter ur name",
+          required: "Enter name",
         },
         email: {
-            required: "Enter the email",
-          email: "In Format xyz@gmail.com",
+            required: "Enter email",
+          email: "Format xyz@gmail.com",
         },
         password:{
-            required:"please Provide a password",
+            required:"Provide password",
             minlength:" only 6 char",
         },
         date: {
-          required: "Please enter the d.o.b",
+          required: "enter the d.o.b",
         },
         age: {
-            required: "Please enter your age",
+            required: "enter your age",
             number: "Age as a numerical value",
         },
         phone: {
-            required: "Please enter the phone number",
-            minlength:"Please specify a valid phone number",
-            maxlength:"Please specify a valid phone number",
+            required: "enter the phone number",
+            minlength:"valid phone number",
+            maxlength:"valid phone number",
           }
       }
     }),
     submitForm=function(e){
       var username = $("input[name=username]").val();
-      var email = $("input[name=email]").val();
-      var password = $("input[name=password]").val();
+      var email = $("#email").val();
+      var password = $("#password").val();
+      var age = $("input[name=age]").val();
+      var phone = $("input[name=phone]").val();
+      var date = $("input[name=date]").val();
       var formData = {
         username: username,
         email: email,
         password: password,
+        age:age,
+        phone:phone,
+        date:date,
       };
       
       $.ajax({

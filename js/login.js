@@ -29,17 +29,11 @@ $(document).ready(function(){
         var useremail=$('#lemail').val();
         var password=$('#lpassword').val();
         var action=$('#action').val();
-        // console.log(useremail);
-        // console.log(password);
-        // console.log(action);
+        
         if(useremail!=''&&password!=''){
             // alert("hi if");
             var urltopass='action=login&useremail='+useremail+'&password='+password;//sending the data to databse for check in single format
-            // var urltopass={
-            //     useremail:useremail,
-            //     password:password,
-            //     action:action,
-            // };
+           
             
             $.ajax({
                 type:'POST',
